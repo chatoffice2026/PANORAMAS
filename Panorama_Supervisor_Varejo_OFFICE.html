@@ -149,7 +149,7 @@ body{font-family:'DM Sans',sans-serif;font-size:15px;background:var(--off-white)
 <!-- HEADER BAND (dark, title only) -->
 <div class="header-band">
   <div class="header-band-inner">
-    <div class="header-eyebrow">Office · Filial Varejo</div>
+    <div class="header-eyebrow">Office · Supervisor · Varejo</div>
     <h1 class="header-title">Panorama Semanal <span>Supervisor – Varejo</span></h1>
   </div>
 </div>
@@ -643,7 +643,7 @@ function gerarPDF(){
       doc.setFillColor(...DARK);doc.rect(0,290,W,7,'F');
       doc.setFillColor(...RED);doc.rect(0,290,4,7,'F');
       doc.setFont('helvetica','normal');doc.setFontSize(7);doc.setTextColor(160,160,160);
-      doc.text('Office · Panorama Semanal – '+sup+' – '+pIni+' a '+pFim,M,295);
+      doc.text('Office · Supervisor · Varejo – '+sup+' – '+pIni+' a '+pFim,M,295);
       doc.text('Pág. '+p+'/'+total,W-M,295,{align:'right'});
     }
 
