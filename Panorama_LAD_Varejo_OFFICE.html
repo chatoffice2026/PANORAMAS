@@ -557,7 +557,7 @@ function gerarPDF(){
     const fil=gv('filial'),ddd_val=gv('ddd');
     if(fil||ddd_val){doc.setFont('helvetica','normal');doc.setFontSize(8.5);doc.text('Filial: '+(fil||'—')+'   |   DDD: '+(ddd_val||'—'),M+36,29);}
     doc.setFontSize(7);doc.setTextColor(170,170,170);
-    doc.text('Gerado em '+new Date().toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric'})+' às '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}),M+36,31);
+    doc.text('Gerado em '+new Date().toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric'})+' às '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}),W-M,37,{align:'right'});
     doc.setTextColor(...WHITE);
     y=50;
 
